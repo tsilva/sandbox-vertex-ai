@@ -1,88 +1,51 @@
 <div align="center">
   <img src="logo.png" alt="sandbox-vertex-ai" width="512"/>
 
-  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-  [![Python](https://img.shields.io/badge/Python-3.10-3776AB.svg)](https://www.python.org/)
-  [![Gemini](https://img.shields.io/badge/Gemini-2.0-4285F4.svg)](https://ai.google.dev/)
+  **💎 Sandbox for experimenting with Google's Gemini API**
 
-  **A sandbox for experimenting with Google's Gemini API**
-
-  [Google AI Studio](https://aistudio.google.com/) · [Gemini Cookbook](https://github.com/google-gemini/cookbook)
 </div>
 
 ## Overview
 
-This project provides a minimal setup for experimenting with Google's Gemini API using the `google-genai` Python SDK. Perfect for prototyping AI features, testing prompts, and exploring Gemini's capabilities.
+A sandbox project for experimenting with Google's Gemini API (formerly Vertex AI). Uses the `google-genai` Python SDK to interact with Gemini models.
 
 ## Features
 
-- Simple environment setup with conda
-- API key authentication via environment variables or `.env` file
-- Ready-to-run example using `gemini-2.0-flash-exp` model
+- **Gemini integration** - Direct access to Gemini models
+- **Simple API** - Uses `google.genai.Client()` interface
+- **Environment config** - API key via `.env` file
 
 ## Quick Start
 
-1. Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
-
-2. Set up environment:
 ```bash
-export GOOGLE_API_KEY="your-api-key-here"
-```
+# Clone and setup
+git clone https://github.com/tsilva/sandbox-vertex-ai.git
+cd sandbox-vertex-ai
 
-3. Create and activate conda environment:
-```bash
+# Create environment
 conda env create -f environment.yml
 conda activate vertex-ai
-```
 
-4. Run the example:
-```bash
+# Configure API key
+cp .env.example .env
+# Edit .env with your GOOGLE_API_KEY from AI Studio
+
+# Run the example
 python main.py
 ```
 
-## Usage
+## Get API Key
 
-The main script demonstrates a simple content generation call:
+1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Create an API key
+3. Add to `.env` file
 
-```python
-from dotenv import load_dotenv
-load_dotenv()
+## Requirements
 
-from google import genai
-
-client = genai.Client()
-response = client.models.generate_content(
-    model='gemini-2.0-flash-exp',
-    contents='How does AI work?'
-)
-print(response.text)
-```
-
-## Configuration
-
-### Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GOOGLE_API_KEY` | Yes | API key from Google AI Studio |
-
-You can set the API key via:
-- Environment variable: `export GOOGLE_API_KEY="your-key"`
-- `.env` file in the project root (loaded via python-dotenv)
-
-### Dependencies
-
-| Package | Purpose |
-|---------|---------|
-| `python-dotenv` | Environment variable management |
-| `google-genai` | Google's Gemini API SDK |
-
-## References
-
-- [Gemini Cookbook Examples](https://github.com/google-gemini/cookbook/tree/main/gemini-2)
-- [Get API Key](https://aistudio.google.com/app/apikey)
-- [Gemini API Documentation](https://ai.google.dev/docs)
+- Python 3.10
+- Conda
+- Google API key
 
 ## License
 
-[MIT](LICENSE) © 2025 Tiago Silva
+MIT
