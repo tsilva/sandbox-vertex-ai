@@ -1,7 +1,7 @@
 <div align="center">
   <img src="logo.png" alt="sandbox-vertex-ai" width="512"/>
 
-  **💎 Sandbox for experimenting with Google's Gemini API**
+  **💎 Sandbox for experimenting with Google's Gemini API 🧪**
 
 </div>
 
