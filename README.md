@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="sandbox-vertex-ai" width="512"/>
+  <img src="https://raw.githubusercontent.com/tsilva/sandbox-vertex-ai/main/logo.png" alt="sandbox-vertex-ai" width="512"/>
 
   **💎 Sandbox for experimenting with Google's Gemini API 🧪**
 
