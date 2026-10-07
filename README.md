@@ -1,12 +1,13 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tsilva/sandbox-vertex-ai/main/logo.png" alt="sandbox-vertex-ai" width="512"/>
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>💎 Sandbox for experimenting with Google&#x27;s Gemini API 🧪</strong>
+  <!-- repo-tagline:end -->
+</p>
+
 > [!NOTE]
 > This repository exists only for experimentation and is currently archived.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/tsilva/sandbox-vertex-ai/main/logo.png" alt="sandbox-vertex-ai" width="512"/>
-
-  **💎 Sandbox for experimenting with Google's Gemini API 🧪**
-
-</div>
 
 ## Overview
 
